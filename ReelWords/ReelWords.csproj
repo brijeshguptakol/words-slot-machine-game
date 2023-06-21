@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="Utils\" />
+      <None Remove="Utils\File\" />
+      <None Remove="Services\" />
+      <None Remove="Logger\" />
+      <None Remove="Resources\" />
+      <None Remove="Resources\american-english-large.txt" />
+      <None Remove="Resources\reels.txt" />
+      <None Remove="Resources\scores.txt" />
+      <None Remove="Repository\Interface\" />
+      <None Remove="Model\" />
+      <None Remove="Collections\" />
+      <None Remove="Game\" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Utils\" />
+      <Folder Include="Utils\File\" />
+      <Folder Include="Services\" />
+      <Folder Include="Logger\" />
+      <Folder Include="Resources\" />
+      <Folder Include="Repository\Interface\" />
+      <Folder Include="Models\" />
+      <Folder Include="Collections\" />
+      <Folder Include="Game\" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="Resources\scores.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Resources\reels.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Resources\american-english-large.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+</Project>
